@@ -1,0 +1,26 @@
+:host {
+  color: #ffffff;
+  .humidity-panel {
+    background: rgba(249, 169, 165, 1);
+    background: -moz-linear-gradient(left, rgba(249, 169, 165, 1) 0%, rgba(33, 180, 226, 1) 53%, rgba(73, 61, 140, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(249, 169, 165, 1)), color-stop(53%, rgba(33, 180, 226, 1)), color-stop(100%, rgba(73, 61, 140, 1)));
+    background: -webkit-linear-gradient(left, rgba(249, 169, 165, 1) 0%, rgba(33, 180, 226, 1) 53%, rgba(73, 61, 140, 1) 100%);
+    background: -o-linear-gradient(left, rgba(249, 169, 165, 1) 0%, rgba(33, 180, 226, 1) 53%, rgba(73, 61, 140, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(249, 169, 165, 1) 0%, rgba(33, 180, 226, 1) 53%, rgba(73, 61, 140, 1) 100%);
+    background: linear-gradient(to right, rgba(249, 169, 165, 1) 0%, rgba(33, 180, 226, 1) 53%, rgba(73, 61, 140, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a9a5', endColorstr='#493d8c', GradientType=1);
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .humidity-data {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .humidity-title {
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+}

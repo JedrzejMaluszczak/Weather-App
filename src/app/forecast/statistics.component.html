@@ -1,0 +1,20 @@
+<h3>Statistics for the selected city:</h3>
+<app-humidity-panel
+  [dataTracker]="humidity"
+></app-humidity-panel>
+<section class="cards-section">
+  <app-daytime
+    [daytime]="'morning'"
+    [dataTracker]="morningTemperature"
+  ></app-daytime>
+
+  <app-daytime
+    [daytime]="'day'"
+    [dataTracker]="dayTemperature"
+  ></app-daytime>
+
+  <app-daytime
+    [daytime]="'night'"
+    [dataTracker]="nightTemperature"
+  ></app-daytime>
+</section>

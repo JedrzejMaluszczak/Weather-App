@@ -1,0 +1,51 @@
+:host {
+  min-width: 300px;
+  max-width: 450px;
+
+  margin: 0 30px;
+
+  .daytime-card {
+    border-radius: 5px;
+    min-height: 210px;
+
+    .card-title {
+      padding: 20px 0;
+      text-align: center;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .weather-info {
+      .data-list {
+        list-style: none;
+        padding: 5px;
+        text-align: left;
+
+        li {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .day {
+    background-image: url("../../assets/day.jpg");
+    background-size: cover;
+    color: #0057a3;
+  }
+
+  .morning {
+    background-image: url("../../assets/morning.jpg");
+    background-size: cover;
+    color: #9f2319;
+  }
+
+  .night {
+    background-image: url("../../assets/night.jpg");
+    background-size: cover;
+    color: #ffffff;
+  }
+}
+
+

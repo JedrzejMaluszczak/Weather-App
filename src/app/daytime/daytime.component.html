@@ -1,0 +1,32 @@
+<div *ngIf="dataTracker">
+  <div
+    class="daytime-card"
+    [ngClass]="{
+    'day': daytime === 'day',
+    'morning': daytime === 'morning',
+    'night': daytime === 'night'
+  }">
+    <h3 class="card-title">{{ daytime }}</h3>
+
+    <div class="weather-info">
+      <ul class="data-list" *ngIf="dataTracker.isEmpty(); else empty">
+        <li><i class="fas fa-temperature-low"></i>
+          Min: {{ dataTracker.showMin() }}&#8451;
+        </li>
+        <li><i class="fas fa-temperature-high"></i>
+          Max: {{ dataTracker.showMax() }}&#8451;
+        </li>
+        <li><i class="fas fa-thermometer-half"></i>
+          Mean: {{ dataTracker.showMean() }}&#8451;
+        </li>
+        <li><i class="fas fa-thermometer-full"></i>
+          Mode: {{ dataTracker.showMode() }}&#8451;
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ng-template #empty>
+    <p class="center">There is no data for specified daytime.</p>
+  </ng-template>
+</div>

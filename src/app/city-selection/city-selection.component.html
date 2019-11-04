@@ -1,0 +1,11 @@
+<select
+  class="select-css"
+  [(ngModel)]="selected"
+  (ngModelChange)="onCityChange()"
+>
+  <option value="" disabled selected>Select city</option>
+  <option
+    *ngFor="let option of options; index as index"
+    [value]="index"
+  >{{ option.name }}</option>
+</select>

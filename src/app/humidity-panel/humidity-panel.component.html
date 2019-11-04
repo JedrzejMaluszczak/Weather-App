@@ -1,0 +1,9 @@
+<div *ngIf="dataTracker" class="humidity-panel">
+  <div class="humidity-title"><i class="fas fa-tint"></i>Humidity</div>
+  <div class="humidity-data">
+  <span>Min: {{ dataTracker.showMin() }}</span>
+  <span>Max: {{ dataTracker.showMax() }}</span>
+  <span>Mean: {{ dataTracker.showMean() }}</span>
+  <span>Mode: {{ dataTracker.showMode() }}</span>
+</div>
+</div>
