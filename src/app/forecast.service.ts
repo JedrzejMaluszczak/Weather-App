@@ -31,7 +31,7 @@ export class ForecastService {
       const forecast = await this.fetchForecast(cityName, countryCode);
       this.initializeDataTrackers(forecast);
     } catch (e) {
-      window.alert(e.error.message);
+      window.alert(e.error.message || 'Connection failed');
     }
   }
 

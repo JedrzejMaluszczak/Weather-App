@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StatisticsComponent } from './forecast/statistics.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 import { DaytimeComponent } from './daytime/daytime.component';
 import { HumidityPanelComponent } from './humidity-panel/humidity-panel.component';
 import { CitySelectionComponent } from './city-selection/city-selection.component';
@@ -27,4 +27,5 @@ import { CitySelectionComponent } from './city-selection/city-selection.componen
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

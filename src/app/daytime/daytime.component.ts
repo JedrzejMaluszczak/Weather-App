@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { DataTracker } from '../data-tracker';
 
@@ -8,7 +8,7 @@ import { DataTracker } from '../data-tracker';
   templateUrl: './daytime.component.html',
   styleUrls: ['./daytime.component.scss']
 })
-export class DaytimeComponent implements OnInit {
+export class DaytimeComponent {
 
   @Input() daytime: 'morning' | 'day' | 'night';
 
@@ -16,9 +16,6 @@ export class DaytimeComponent implements OnInit {
 
 
   constructor() {
-  }
-
-  ngOnInit() {
   }
 
 }
